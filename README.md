@@ -1,4 +1,4 @@
-# Silicon United
+![SILICON UNITED](https://s7.postimg.org/q2f7hpn23/silicon_united_black_alt.png)
 > Drivers, Firmware and Example projects for makers.
 
 # Overview
