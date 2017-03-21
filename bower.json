@@ -1,0 +1,10 @@
+{
+  "name": "siliconunited",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.0.6",
+    "okvideo": "^2.3.3",
+    "jquery": "^2.2.0"
+  }
+}
