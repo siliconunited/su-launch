@@ -226,6 +226,11 @@
 			opacity: 0.25;
 		}
 
+	.nav {
+		position: fixed;
+		top: 15px;
+		right: 15px;
+	}
 	@media screen and (max-width: 736px) {
 
 		html {
