@@ -3,6 +3,11 @@
 
 # Overview
 
+Run the app locally with the following command:
+`
+DEBUG=siliconunited:* npm start
+`
+
 Browsers deal with side-scrolling pages differently to vertically-oriented ones in that they require elements (or at the very least, the top-most wrapper element) to have a defined (fixed) width. This leads to a number of limitations (eg. the page won't automatically grow/shrink in the same way a vertically-oriented one will), so Ethereal does two things to work around this:
 
 - The entire page is made up of "panel" elements, each of which can be assigned an optional "size" modifier (satisfying the fixed width requirement).
