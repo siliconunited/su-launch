@@ -3476,6 +3476,10 @@ body#landing.is-loading {
 	color: rgba(0, 0, 0, 0.875);
 }
 
+#job,
+#job h1, #job h2, #job h3, #job h4, #job strong {
+	color: rgba(0, 0, 0, 0.875);
+}
 /*.hiring:hover{
 	color: #482F70;
 	}*/

@@ -7,8 +7,7 @@ block content
 	p #{job.about}
 	
 	h2 Description:
-	p
-		| #{job.description}
+	p #{job.description}
 		
 	h3 Specific job duties include:
 	ul
@@ -30,17 +29,21 @@ block content
 		p #{req}
 	
 	h2 How to Apply
-		each type in howToApply
+		each type in job.howToApply
 			p #{type}
 			
 	br
 	.info
-		strong Organization: #{job.info.organization}
+		strong Organization: 
+		| #{job.info.organization}
 		br
-		strong Job: #{job.field}
+		strong Job: 
+		| #{job.info.field}
 		br
-		strong Primary Location: #{job.primaryLocation}
+		strong Primary Location: 
+		| #{job.info.primaryLocation}
 		br
-		strong Schedule: #{job.schedule}
+		strong Schedule: 
+		| #{job.info.schedule}
 		br
 	br
