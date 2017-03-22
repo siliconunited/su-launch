@@ -3476,8 +3476,8 @@ body#landing.is-loading {
 	color: rgba(0, 0, 0, 0.875);
 }
 
-#job,
-#job h1, #job h2, #job h3, #job h4, #job strong {
+body.alt,
+body.alt h1, body.alt h2, body.alt h3, body.alt h4, body.alt strong {
 	color: rgba(0, 0, 0, 0.875);
 }
 /*.hiring:hover{

@@ -10,7 +10,11 @@ html(lang="en")
 		link(rel='stylesheet', href='/css/main.css')
 		noscript
 			link(rel='stylesheet', href='/css/noscript.css')
-	body(id=page)
+		if page === 'landing'
+			body(id=page)
+		else 
+			body.alt(id=page)
+			
 		block nav
 			.nav
 				a.button.color1.no-border.hiring(href='/jobs') We're Hiring!
