@@ -1,14 +1,27 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET job with no index. */
 router.get('/', function(req, res, next) {
+	res.locals.page = 'job';
+
+	var jobIndex = req.params.job;
+	if(jobIndex == undefined){
+		// render the error page
+		res.status(err.status || 404);
+		res.render('error');
+	}
+});
+
+/* GET job. */
+router.get('/:job', function(req, res, next) {
 
 	res.locals.page = 'job';
 
 	var jobs = [
 		{
-			title: 'Process Engineering Technician',
+			id: 0,
+			name: 'Process Engineering Technician',
 			about: 'Tektronix is a place where people are challenged to explore the boundaries of what’s possible, bringing the digital future one step closer every day. Our work accelerates technological breakthroughs that are revolutionizing culture and industry worldwide. Through precision-engineered measurement solutions, we work with our customers to eliminate the barriers between inspiration and realization of world-changing technologies. Realize your true potential at Tektronix – join us in revolutioneering a better tomorrow.',
 			description: 'As a Process Engineering technician, you will assist process engineers in the development of new products and processes. Specifically, you will be responsible for developing prototypes in the quick turn area that allow design engineers to get early feedback on their ideas. This work environment demands a rapid pace and requires an individual to adapt minute to minute. Creativity and problem solving are also highly valued skills.',
 			duties: [
@@ -16,7 +29,11 @@ router.get('/', function(req, res, next) {
 				'Write and submit Engineering Change Orders based on Engineering Redlines.',
 				'Follow experiment plans, take data, and enter data in spreadsheets.',
 				'Gather requested materials (EMM forms), equipment, and supplies for experiments.',
-				'Document (in writing and with pictures) assembly or process issues, NPI or regular production.'
+				'Document (in writing and with pictures) assembly or process issues, NPI or regular production.',
+				'First responder to production/QA flags. Disposition parts for rework, scrap, or acceptance. Propose corrective action where appropriate.',
+				'Recognizes deviation from accepted practice, assesses the reason for the deviation, proposes plan to address deviation. Call for the required help.',
+				'Propose updates to documentation based on Associate feedback or troubleshooting.',
+				'Train Associates on processes.'
 			],
 			qualifications: [
 				'Must be a U.S. Citizen or have U.S. Permanent Resident status.',
@@ -55,16 +72,23 @@ router.get('/', function(req, res, next) {
 		}
 	];
 
-	var curJobIndex = req.param.job;
-	if(!curJobIndex){
+	var jobIndex = req.params.job;
+	if(jobIndex == undefined){
 		// render the error page
 		res.status(err.status || 404);
 		res.render('error');
 	}
 
+	//Find the job with the id.
+	res.locals.job = {};
+	for(var i=0; i<jobs.length; i++){
+		if(parseInt(jobs[i].id) === parseInt(jobIndex)){
+			res.locals.job = jobs[i];
+		}
+	}
+
 	res.render('job', {
-		title: 'Silicon United Jobs',
-		job: jobs[curJobIndex]
+		title: 'Silicon United Jobs'
 	});
 });
 

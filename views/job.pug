@@ -1,0 +1,46 @@
+extends layout
+
+block content
+	h1= job.name
+	
+	h2 About Us:
+	p #{job.about}
+	
+	h2 Description:
+	p
+		| #{job.description}
+		
+	h3 Specific job duties include:
+	ul
+		each duty in job.duties
+			li #{duty}
+		
+	h3 Qualifications:
+	h3 The successful candidate will possess the following combination of education and experience:
+	ul
+		each qualification in job.qualifications
+			li #{qualification}
+		
+	h3 Preferred Skills:
+		each skill in job.preferredSkills
+			p #{skill}
+			
+	h3 Compliance
+	each req in job.compliance
+		p #{req}
+	
+	h2 How to Apply
+		each type in howToApply
+			p #{type}
+			
+	br
+	.info
+		strong Organization: #{job.info.organization}
+		br
+		strong Job: #{job.field}
+		br
+		strong Primary Location: #{job.primaryLocation}
+		br
+		strong Schedule: #{job.schedule}
+		br
+	br

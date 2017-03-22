@@ -3410,6 +3410,20 @@ body#landing.is-loading {
 }
 
 @media screen and (max-width: 736px) {
+	#inset {
+		margin-top: 15%;
+		left: 3%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#inset {
+		margin-top: 15%;
+		left: 1%;
+	}
+}
+
+@media screen and (max-width: 736px) {
 	#landing #wrapper {
 		-moz-flex-direction: column;
 		-webkit-flex-direction: column;

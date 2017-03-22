@@ -5,7 +5,7 @@ block content
 		.span-6
 			h3.major.black Open Positions
 			each jobGroup, key in jobs
-				h4.black key
+				h4.black #{key}
 				.table-wrapper.color3
 					table
 						thead.black
@@ -16,7 +16,7 @@ block content
 							each job, index in jobGroup
 								tr.color1
 									td
-										a(href='job/' + index) #{job.name}
+										a(href='job/' + job.id) #{job.name}
 									td #{job.location}	
 							//- tfoot
 							//- 	tr

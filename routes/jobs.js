@@ -10,15 +10,35 @@ router.get('/', function(req, res, next) {
 		'Manufacturing / Operations': [
 			{
 				name: 'Process Engineering Technician',
-				location: 'Portland OR. United States'
+				location: 'Portland OR. United States',
+				id: 0
 			},
 			{
 				name: 'Process Engineering Technician',
-				location: 'Portland OR. United States'
+				location: 'Portland OR. United States',
+				id: 1
 			},
 			{
 				name: 'Process Engineering Technician',
-				location: 'Portland OR. United States'
+				location: 'Portland OR. United States',
+				id: 2
+			}
+		],
+		'Project Management': [
+			{
+				name: 'Process Engineering Technician',
+				location: 'Portland OR. United States',
+				id: 3
+			},
+			{
+				name: 'Process Engineering Technician',
+				location: 'Portland OR. United States',
+				id: 4
+			},
+			{
+				name: 'Process Engineering Technician',
+				location: 'Portland OR. United States',
+				id: 5
 			}
 		]
 	};
