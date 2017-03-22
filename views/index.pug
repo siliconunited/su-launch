@@ -1,0 +1,110 @@
+extends layout
+
+block content
+	// Panel (Banner)
+	section.panel.banner.right
+		.content.color0.span-3-75
+			img(src='/images/silicon-united-white-alt.png', alt='logo', width='400')
+			p.lead We want to build drivers, firmware and example projects for your chips.
+			ul.actions
+				li
+					a.button.special.color1.circle.icon.fa-angle-right(href='#first') Next
+		.image.filtered.span-1-75(data-position='25% 25%')
+			img(src='images/pic01.jpg', alt='')
+				
+	// Panel (Spotlight)
+	section#first.panel.spotlight.medium.right
+		.content.span-7
+			h2.major HARDWARE SOFTWARE EXPERTS
+			p
+				| Our team of hardware and software engineers is globally dispersed and ready to code for even the most complicated microchips. 
+				br
+				| By providing a solid code base, we keep makers' making, help developers in crunch times and ensure customers actually use your products.
+		.image.filtered.tinted(data-position='top left')
+			img(src='images/pic02.jpg', alt='')
+				
+	// Panel
+	section.panel.color1
+		.intro.joined
+			h2.major GLOBALLY CENTRALIZED REPOSITORIES
+			p
+				| Code is stored in public repositories that are easily accessible, forkable and searchable.
+		.inner
+			ul.grid-icons.three.connected
+				li
+					span.icon.fa-github
+						span.label Github Repository
+				li
+					span.icon.fa-code-fork
+						span.label Forkable
+				li
+					span.icon.fa-globe
+						span.label Globally Accessible
+				li
+					span.icon.fa-smile-o
+						span.label Happy Makers
+				li
+					span.icon.fa-microchip
+						span.label Microchip
+				li
+					span.icon.fa-code
+						span.label Code
+						
+	// Panel (Spotlight)
+	section.panel.spotlight.medium.left
+		.content
+			h2.major FLEXIBLE PLANS
+			p
+				| We provide flexible contracts and monthly plans that work for corporations, small businesses and startups.
+		.image.filtered.tinted(data-position='top right')
+			img(src='images/pic03-alt.jpg', alt='')
+				
+	// Panel
+	section.panel
+		.intro.color2
+			h2.major BE NOTICED
+			p
+				| Become part of the largest public repository of drivers, firmware and example projects on the net.
+		.gallery
+			.group.span-3
+				img.image.filtered.span-3(src='images/gallery/thumbs/01.jpg', alt='', data-position='bottom')
+				img.image.filtered.span-1-5(src='images/gallery/thumbs/02.jpg', alt='', data-position='center')
+				img.image.filtered.span-1-5(src='images/gallery/thumbs/03.jpg', alt='', data-position='bottom')
+				//- img.image.filtered.span-1-5(src='images/gallery/thumbs/04.jpg', alt='', class='image filtered span-2-5', data-position='top')
+			
+	// Panel
+	section.panel.color4-alt
+		.intro.color4
+			h2.major GET IN TOUCH
+			p
+			p
+				| 1111 E Burnside St.
+				br
+				| Portland, OR. 97214
+			a.button.icon.fa-envelope-o(href='mailto:team@siliconunited.com') LEARN MORE
+			p
+		.inner.columns.divided
+			//
+				.span-1-5
+					ul.contact-icons.color1
+						li.icon.fa-twitter
+							a(href='#') @silicon_united
+						li.icon.fa-facebook
+							a(href='#') facebook.com/siliconunited
+						li.icon.fa-snapchat-ghost
+							a(href='#') @siliconunited
+						li.icon.fa-instagram
+							a(href='#') @siliconunited
+						li.icon.fa-medium
+							a(href='#') medium.com/siliconunited
+
+
+block footer
+	// Copyright
+	.copyright &copy; 2017 Silicon United
+
+block js
+	// Scripts
+	script(src='/js/jquery.min.js')
+	script(src='/js/skel.min.js')
+	script(src='/js/main.js')
