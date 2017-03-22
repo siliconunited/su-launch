@@ -8,6 +8,10 @@ app.get('/', function(req, res) {
   res.sendfile(__dirname + '/public/index.html');
 });
 
+app.get('/jobs', function(req, res) {
+  res.sendfile(__dirname + '/public/jobs.html');
+});
+
 var port = process.env.PORT || 3000;
 console.log('Port ' + port);
 app.listen(port);
