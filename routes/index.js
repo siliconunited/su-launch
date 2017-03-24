@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 
   res.locals.page = 'landing';
 
-  res.render('index', { title: 'Silicon United Makes Firmware for Makers' });
+  res.render('index', { title: 'Silicon United: Firmware for Makers' });
 });
 
 module.exports = router;

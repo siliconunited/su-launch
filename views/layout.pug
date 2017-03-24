@@ -10,22 +10,29 @@ html(lang="en")
 		link(rel='stylesheet', href='/css/main.css')
 		noscript
 			link(rel='stylesheet', href='/css/noscript.css')
-		if page === 'landing'
-			body(id=page)
-		else 
-			body.alt(id=page)
+				 
+		body(id=page, class= (page === 'landing') ? '' : 'alt')
 			
-		block nav
-			.nav
-				a.button.color1.no-border.hiring(href='/jobs') We're Hiring!
-				a.button.special(href='mailto:team@siliconunited.com') CONTACT SALES
+			block nav
+				if page === 'landing'
+					.nav
+						a.button.color1.no-border.hiring(href='/jobs') We're Hiring!
+						a.button.special(href='mailto:team@siliconunited.com') CONTACT SALES
+				else 
+					.nav.fill
+						a(href='/') 
+							img(src='/images/logo-nav.png')
+						a.button.color1.no-border.hiring(href='/jobs') We're Hiring!
+						a.button.special(href='mailto:team@siliconunited.com') CONTACT SALES
+			
+			// Page Wrapper
+			#page-wrapper
+				// Wrapper
+				#wrapper
+					
+					block content
+					
+					block footer
 		
-		// Page Wrapper
-		#page-wrapper
-			// Wrapper
-			#wrapper
-				
-				block content
-				
-				block footer
 		block js
+			
