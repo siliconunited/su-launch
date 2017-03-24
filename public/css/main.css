@@ -3298,6 +3298,10 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 	padding: 5rem;
 }
 
+#swipe-btn-1{
+	opacity: 1;
+}
+
 @media screen and (orientation: portrait) {
 	#page-wrapper {
 		padding-left: 2rem;
@@ -3322,11 +3326,19 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 		height: auto;
 		padding: 1rem;
 	}
+
+	#swipe-btn-1{
+		opacity: 0;
+	}
 }
 
 @media screen and (max-width: 480px) {
 	#page-wrapper {
 		padding: 0;
+	}
+
+	#swipe-btn-1{
+		opacity: 0;
 	}
 }
 

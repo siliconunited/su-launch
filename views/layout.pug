@@ -11,30 +11,6 @@ html(lang="en")
 		link(rel='stylesheet', href='/font-awesome-animation/dist/font-awesome-animation.min.css')
 		noscript
 			link(rel='stylesheet', href='/css/noscript.css')
-				 
-		body(id=page, class= (page === 'landing') ? '' : 'alt')
-			
-			block nav
-				if page === 'landing'
-					.nav
-						a.button.color1.no-border.hiring(href='/jobs', onclick='handleJobsClick("LandingPage");') We're Hiring!
-						a.button.special(href='mailto:team@siliconunited.com', onclick='handleContactSalesClick("LandingPage");') CONTACT SALES
-				else 
-					.nav.fill
-						a(href='/') 
-							img(src='/images/logo-nav.png')
-						a.button.color1.no-border.hiring(href='/jobs', onclick='handleJobsClick("Page");') We're Hiring!
-						a.button.special(href='mailto:team@siliconunited.com', onclick='handleContactSalesClick("Page");') CONTACT SALES
-			
-			// Page Wrapper
-			#page-wrapper
-				// Wrapper
-				#wrapper
-					
-					block content
-					
-					block footer
-		
 		// Analytics
 		script.
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -68,5 +44,29 @@ html(lang="en")
 					'eventValue': 1
 				});
 			}
+					
+	body(id=page, class= (page === 'landing') ? '' : 'alt')
+			
+			block nav
+				if page === 'landing'
+					.nav
+						a.button.color1.no-border.hiring(href='/jobs', onclick='handleJobsClick("LandingPage");') We're Hiring!
+						a.button.special(href='mailto:team@siliconunited.com', onclick='handleContactSalesClick("LandingPage");') CONTACT SALES
+				else 
+					.nav.fill
+						a(href='/') 
+							img(src='/images/logo-nav.png')
+						a.button.color1.no-border.hiring(href='/jobs', onclick='handleJobsClick("Page");') We're Hiring!
+						a.button.special(href='mailto:team@siliconunited.com', onclick='handleContactSalesClick("Page");') CONTACT SALES
+			
+			// Page Wrapper
+			#page-wrapper
+				// Wrapper
+				#wrapper
+					
+					block content
+					
+					block footer
+		
 		block js
 			
