@@ -758,8 +758,11 @@ input[type="radio"]:focus:checked+label:before {
 
 input[type="checkbox"].color1+label:before,
 input[type="radio"].color1+label:before,
-table th.color1 {
+table .color1 {
 	color: #726193 !important;
+}
+table .color1 a:hover {
+	color: #653F98 !important;
 }
 
 input[type="checkbox"].color2+label:before,
