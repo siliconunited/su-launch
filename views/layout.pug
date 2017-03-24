@@ -16,14 +16,14 @@ html(lang="en")
 			block nav
 				if page === 'landing'
 					.nav
-						a.button.color1.no-border.hiring(href='/jobs') We're Hiring!
-						a.button.special(href='mailto:team@siliconunited.com') CONTACT SALES
+						a.button.color1.no-border.hiring(href='/jobs', onclick='handleJobsClick("LandingPage");') We're Hiring!
+						a.button.special(href='mailto:team@siliconunited.com', onclick='handleContactSalesClick("LandingPage");') CONTACT SALES
 				else 
 					.nav.fill
 						a(href='/') 
 							img(src='/images/logo-nav.png')
-						a.button.color1.no-border.hiring(href='/jobs') We're Hiring!
-						a.button.special(href='mailto:team@siliconunited.com') CONTACT SALES
+						a.button.color1.no-border.hiring(href='/jobs', onclick='handleJobsClick("Page");') We're Hiring!
+						a.button.special(href='mailto:team@siliconunited.com', onclick='handleContactSalesClick("Page");') CONTACT SALES
 			
 			// Page Wrapper
 			#page-wrapper
@@ -42,6 +42,30 @@ html(lang="en")
 			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 			ga('create', 'UA-91476539-1', 'auto');
 			ga('send', 'pageview');
-					
+		
+		script.
+			function handleOutboundLinkClicks(event) {
+				ga('send', 'event', {
+					eventCategory: 'Outbound Link',
+					eventAction: 'click',
+					eventLabel: event.target.href
+				});
+			}
+			function handleContactSalesClick(label) {
+				ga('send', 'event', { 
+					'eventCategory': 'ContactSales', 
+					'eventAction': 'click',
+					'eventLabel': label, 
+					'eventValue': 1 
+				});
+			}
+			function handleJobsClick(label) {
+				ga('send', 'event', { 
+					'eventCategory': 'Hiring', 
+					'eventAction': 'click',
+					'eventLabel': label, 
+					'eventValue': 1
+				});
+			}
 		block js
 			
