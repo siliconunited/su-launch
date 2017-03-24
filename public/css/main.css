@@ -758,28 +758,24 @@ input[type="radio"]:focus:checked+label:before {
 
 input[type="checkbox"].color1+label:before,
 input[type="radio"].color1+label:before,
-.color1,
 table th.color1 {
 	color: #726193 !important;
 }
 
 input[type="checkbox"].color2+label:before,
 input[type="radio"].color2+label:before,
-.color2,
 table th.color2 {
 	color: #e37b7c !important;
 }
 
 input[type="checkbox"].color3+label:before,
 input[type="radio"].color3+label:before,
-.color3,
 table th.color3 {
 	color: #ffe4b4 !important;
 }
 
 input[type="checkbox"].color4+label:before,
 input[type="radio"].color4+label:before,
-.color4,
 table th.color4 {
 	color: #353865 !important;
 }
