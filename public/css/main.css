@@ -3419,7 +3419,7 @@ body#landing.is-loading {
 
 #inset {
 	position: relative;
-	margin: 10% auto;
+	margin: 3% auto;
 }
 
 @media screen and (max-width: 736px) {
@@ -3524,6 +3524,3 @@ body.alt,
 body.alt h1, body.alt h2, body.alt h3, body.alt h4, body.alt strong {
 	color: rgba(0, 0, 0, 0.875);
 }
-/*.hiring:hover{
-	color: #482F70;
-	}*/
