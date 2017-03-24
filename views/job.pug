@@ -1,49 +1,53 @@
 extends layout
 
 block content
-	h1= job.name
-	
-	h2 About Us:
-	p #{job.about}
-	
-	h2 Description:
-	p #{job.description}
+	#inset
+		h1= job.name
 		
-	h3 Specific job duties include:
-	ul
-		each duty in job.duties
-			li #{duty}
+		h2 About Us:
+		p #{common.about}
 		
-	h3 Qualifications:
-	h3 The successful candidate will possess the following combination of education and experience:
-	ul
-		each qualification in job.qualifications
-			li #{qualification}
-		
-	h3 Preferred Skills:
+		h2 Description:
+		p #{job.description}
+			
+		h3 Specific job duties include:
+		ul
+			each duty in job.duties
+				li #{duty}
+			
+		h3 Qualifications:
+		h4 The successful candidate will possess the following combination of education and experience:
+		ul
+			each qualification in job.qualifications
+				li #{qualification}
+			
+		h3 Preferred Skills:
 		each skill in job.preferredSkills
 			p #{skill}
-			
-	h3 Compliance
-	each req in job.compliance
-		p #{req}
-	
-	h2 How to Apply
-		each type in job.howToApply
+				
+		h3 Compliance
+		each req in common.compliance
+			p #{req}
+		
+		h2 How to Apply
+		each type in common.howToApply
 			p #{type}
-			
-	br
-	.info
-		strong Organization: 
-		| #{job.info.organization}
+				
 		br
-		strong Job: 
-		| #{job.info.field}
+		.info
+			strong Seniority Level:
+			| #{job.info.seniorityLevel}
+			br
+			strong Industry:
+			| #{job.info.industry}
+			br
+			strong Employment Type: 
+			| #{job.info.employmentType}
+			br
+			//- strong Job Functions:
+			//- | #{job.info.jobFunctions}
+			//- br
+			strong Primary Location:
+			| #{job.info.primaryLocation}
+			br
 		br
-		strong Primary Location: 
-		| #{job.info.primaryLocation}
-		br
-		strong Schedule: 
-		| #{job.info.schedule}
-		br
-	br

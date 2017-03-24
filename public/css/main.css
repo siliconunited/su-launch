@@ -3405,8 +3405,7 @@ body#landing.is-loading {
 
 #inset {
 	position: relative;
-	margin-top: 20%;
-	left: 20%;
+	margin: 10% auto;
 }
 
 @media screen and (max-width: 736px) {
@@ -3474,6 +3473,10 @@ body#landing.is-loading {
 
 #jobs {
 	color: rgba(0, 0, 0, 0.875);
+}
+
+#job ul {
+	padding-left: 3%;
 }
 
 body.alt,

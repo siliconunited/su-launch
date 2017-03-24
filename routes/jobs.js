@@ -7,38 +7,30 @@ router.get('/', function(req, res, next) {
 	res.locals.page = 'jobs';
 
 	var jobs = {
-		'Manufacturing / Operations': [
+		'Engineering and Production': [
 			{
 				name: 'Process Engineering Technician',
 				location: 'Portland OR. United States',
 				id: 0
 			},
 			{
-				name: 'Process Engineering Technician',
+				name: 'Embedded Systems Engineer',
 				location: 'Portland OR. United States',
 				id: 1
-			},
-			{
-				name: 'Process Engineering Technician',
-				location: 'Portland OR. United States',
-				id: 2
 			}
 		],
 		'Project Management': [
 			{
-				name: 'Process Engineering Technician',
+				name: 'Senior Technical Project Manager',
+				location: 'Portland OR. United States',
+				id: 2
+			}
+		],
+		'Business Development and Sales': [
+			{
+				name: 'Business Development Manager',
 				location: 'Portland OR. United States',
 				id: 3
-			},
-			{
-				name: 'Process Engineering Technician',
-				location: 'Portland OR. United States',
-				id: 4
-			},
-			{
-				name: 'Process Engineering Technician',
-				location: 'Portland OR. United States',
-				id: 5
 			}
 		]
 	};
