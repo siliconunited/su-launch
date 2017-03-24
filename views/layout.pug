@@ -47,26 +47,27 @@ html(lang="en")
 					
 	body(id=page, class= (page === 'landing') ? '' : 'alt')
 			
-			block nav
-				if page === 'landing'
-					.nav
-						a.button.color1.no-border.hiring(href='/jobs', onclick='handleJobsClick("LandingPage");') We're Hiring!
-						a.button.special(href='mailto:team@siliconunited.com', onclick='handleContactSalesClick("LandingPage");') CONTACT SALES
-				else 
-					.nav.fill
-						a(href='/') 
-							img(src='/images/logo-nav.png')
-						a.button.color1.no-border.hiring(href='/jobs', onclick='handleJobsClick("Page");') We're Hiring!
-						a.button.special(href='mailto:team@siliconunited.com', onclick='handleContactSalesClick("Page");') CONTACT SALES
-			
-			// Page Wrapper
-			#page-wrapper
-				// Wrapper
-				#wrapper
-					
-					block content
-					
-					block footer
+		block nav
+			if page === 'landing'
+				.nav
+					a.button.color1.no-border.hiring(href='/jobs', onclick='handleJobsClick("LandingPage");') We're Hiring!
+					a.button.special(href='mailto:team@siliconunited.com', onclick='handleContactSalesClick("LandingPage");') CONTACT SALES
+			else 
+				.nav.fill
+					a(href='/') 
+						img(src='/images/logo-nav.png')
+					a.button.color1.no-border.hiring(href='/jobs', onclick='handleJobsClick("Page");') We're Hiring!
+					a.button.special(href='mailto:team@siliconunited.com', onclick='handleContactSalesClick("Page");') CONTACT SALES
+		
+		// Page Wrapper
+		#page-wrapper
+			// Wrapper
+			#wrapper
+				
+				block content
+				
+				block footer
 		
 		block js
+			
 			
