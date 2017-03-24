@@ -1,4 +1,11 @@
-var nr = require('newrelic');
+// Simulate config options from your production environment by
+// customising the .env file in your project's root folder.
+require('dotenv').config();
+
+// Initialise New Relic if an app name and license key exists
+if(process.env.NEW_RELIC_LICENSE_KEY) {
+	var nr = require('newrelic');
+}
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
