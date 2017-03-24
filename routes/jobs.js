@@ -17,6 +17,11 @@ router.get('/', function(req, res, next) {
 				name: 'Embedded Systems Engineer',
 				location: 'Portland OR. United States',
 				id: 1
+			},
+			{
+				name: 'Intern Embedded Systems Engineer',
+				location: 'Portland OR. United States',
+				id: 5
 			}
 		],
 		'Project Management': [
@@ -24,6 +29,11 @@ router.get('/', function(req, res, next) {
 				name: 'Senior Technical Project Manager',
 				location: 'Portland OR. United States',
 				id: 2
+			},
+			{
+				name: 'Intern Technical Project Manager',
+				location: 'Portland OR. United States',
+				id: 4
 			}
 		],
 		'Business Development and Sales': [

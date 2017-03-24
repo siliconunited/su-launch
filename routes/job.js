@@ -115,7 +115,49 @@ router.get('/:job', function(req, res, next) {
 				industry: 'Computer Software, Electronic Hardware, Internet',
 				employmentType: 'Contract',
 				organization: 'Silicon United',
-				jobFunctions: 'Sales, Business Development',
+				jobFunctions: 'Engineering, Software Development, Management',
+				primaryLocation: 'North America - United States - Oregon - Portland'
+			}
+		},
+		{
+			id: 5,
+			name: 'Intern Embedded Systems Engineer',
+			description: 'Being an Embedded Systems Engineer Intern at Silicon United is a bit different than what is typically expected. So please read the qualifications carefully to know what you are getting yourself into. More specifically, you may be required to create concept documents that explain how an embedded system could work with a specific set of components. This work demands a creative individual that has hardware and techical chops. Creativity and problem solving are must.',
+			duties: [
+				'Work with other engineers to provide detail for how a set of hardware components work in a system',
+				'Collaborate in brainstorm sessions with the creative and engineering teams to provide technical knowledge and insight',
+				'Develop software that meets internal coding standards',
+				'Ability to collaborate and work remotely with other engineers',
+				'Embedded software development for microcontrollers',
+				'Programming firmware for sensing applications',
+				'Field programmable gate array (FPGA) application design and testing',
+				'System engineering, planning and feature analysis',
+			],
+			qualifications: [
+				// 'Must be a U.S. Citizen or have U.S. Permanent Resident status.',
+				'BS or MS in computer science or equivalent work experience',
+				'1+ year of embedded development for consumer products',
+				'Demonstrated ability to deliver highly robust and reliable products',
+				'Excellent hand eye coordination and organization skills.',
+				'Experience using version control systems.',
+				'Must have experience programming in one of the following languages: C, C++, Python, MicroPython, Java, Javascript',
+				'Experience with various computer programs and be progressive in learning new applications: Github, Excel, Platform IO, circuit design programs',
+				'Must be able to multitask, and use good judgment to optimize execution of multiple requests.',
+				'Ability to work independently and elicit support and cooperation of co-workers.',
+				'Must be able to follow/interpret/question verbal and written technical requests, be observant, and call for clarification if a problem is suspected',
+				'Must have good written and verbal English communication skills, be able to create bugs/flags or emails clearly communicating technical issues.',
+				'Must have good comprehension skills, read and extract technical information from process specs, data sheets, and reports.'
+			],
+			preferredSkills: [
+				'Advanced working knowledge of electronic circuits.',
+				'Ability to write code and develop firmware for various types of hardware components.',
+			],
+			info: {
+				seniorityLevel: 'Entry',
+				industry: 'Computer Software, Electronic Hardware, Internet',
+				employmentType: 'Contract',
+				organization: 'Silicon United',
+				jobFunctions: 'Engineering, Delivery Process',
 				primaryLocation: 'North America - United States - Oregon - Portland'
 			}
 		},
@@ -174,6 +216,56 @@ router.get('/:job', function(req, res, next) {
 			],
 			info: {
 				seniorityLevel: 'Senior',
+				industry: 'Computer Software, Electronic Hardware, Internet',
+				employmentType: 'Contract',
+				organization: 'Silicon United',
+				jobFunctions: 'Management, Delivery',
+				primaryLocation: 'North America - United States - Oregon - Portland'
+			}
+		},
+		{
+			id: 4,
+			name: 'Intern Technical Project Manager',
+			description: 'Silicon United is looking for an intern Technical Project Manager to join our team. In order to succeed in this role, you will need an basic understanding of the microelectronics landscape and a desire and willingness to learn more.',
+			duties: [
+				'Manage a project or projects, with the collaboration of the stakeholder committee in such a way that the work results are delivered on time and within budget.',
+				'Integrate new team members into the project.',
+				'Define project assignments according to needs and review the performance of team members.',
+				'Manage the budget and schedule of the project.',
+				'Monitor, evaluate, and report on project performance (budget, cost, schedule, scope, quality, risk, and issue).',
+				'Monitor and report on project financial status.',
+				'Ensure that the project work results are compliant with the stated requirements, priorities, and strategies of the project.',
+				'Integrate the results of the external providers into the project and ensure an appropriate and timely outcome.',
+				'Manage change requests and outstanding issues.',
+				'Submit major change requests to management stakeholders.',
+				'Participate in development workshops, when necessary.',
+				'Participate in quality control and quality assurance activities.',
+				'Participate in the development of project procedures.',
+				'Control deliverable review and obtain written approval for them.',
+				'Carry out project progress and status reviews.',
+				'Communicate project progress and directions to members of the delivery group.',
+				'Raise project issues and risks, as well as quality and scope deviations.',
+				'Escalate issues, risks and problems to the identified authority when the situation so requires.'
+			],
+			qualifications: [
+				'Ability to manage multiple software projects in multiple development disciplines and experience with agile development methodologies like Scrum',
+				'Proven ability to work effectively with a wide range of stakeholders and ability to influence a wide range of interests',
+				'Ability to move projects forward with high-level direction and a reputation for taking initiative to resolve issues and meet commitments',
+				'Strong organizational and communication skills including effective communication with technical and non-technical audiences',
+				'Proven ability to grow and thrive in a flexible, dynamic environment with minimal guidance.',
+				'A roll-up-your-sleeves mentality; someone who can set team direction, but also willing to jump in and help out',
+				'Must be able to multitask, and use good judgment to optimize execution of multiple requests.',
+				'Must have good written and verbal English communication skills, be able to create bugs/flags or emails clearly communicating technical issues.',
+				'Must have good comprehension skills, read and extract technical information from process specs, data sheets, and reports.'
+			],
+			preferredSkills: [
+				'Formal Education in Computer Science, Electrical Engineering, or equivalent work experience',
+				'Project management experience',
+				'Experience delivering firmware or software projects',
+				'Working knowledge of Github',
+			],
+			info: {
+				seniorityLevel: 'Entry',
 				industry: 'Computer Software, Electronic Hardware, Internet',
 				employmentType: 'Contract',
 				organization: 'Silicon United',
