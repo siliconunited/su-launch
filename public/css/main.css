@@ -725,29 +725,43 @@ input[type="checkbox"]:checked+label:before, input[type="radio"]:checked+label:b
 	border-color: rgba(255, 255, 255, 0.875);
 }
 
-input[type="checkbox"]:focus+label:before, input[type="radio"]:focus+label:before {
+input[type="checkbox"]:focus+label:before,
+input[type="radio"]:focus+label:before {
 	border-color: #ffe4b4;
 	box-shadow: 0 0 0 1px #ffe4b4;
 }
 
-input[type="checkbox"]:focus:checked+label:before, input[type="radio"]:focus:checked+label:before {
+input[type="checkbox"]:focus:checked+label:before,
+input[type="radio"]:focus:checked+label:before {
 	background: #ffe4b4;
 }
 
-input[type="checkbox"].color1+label:before, input[type="radio"].color1+label:before {
-	color: #726193;
+input[type="checkbox"].color1+label:before,
+input[type="radio"].color1+label:before,
+.color1,
+table th.color1 {
+	color: #726193 !important;
 }
 
-input[type="checkbox"].color2+label:before, input[type="radio"].color2+label:before {
-	color: #e37b7c;
+input[type="checkbox"].color2+label:before,
+input[type="radio"].color2+label:before,
+.color2,
+table th.color2 {
+	color: #e37b7c !important;
 }
 
-input[type="checkbox"].color3+label:before, input[type="radio"].color3+label:before {
-	color: #ffe4b4;
+input[type="checkbox"].color3+label:before,
+input[type="radio"].color3+label:before,
+.color3,
+table th.color3 {
+	color: #ffe4b4 !important;
 }
 
-input[type="checkbox"].color4+label:before, input[type="radio"].color4+label:before {
-	color: #353865;
+input[type="checkbox"].color4+label:before,
+input[type="radio"].color4+label:before,
+.color4,
+table th.color4 {
+	color: #353865 !important;
 }
 
 input[type="checkbox"]+label:before {
@@ -3475,8 +3489,35 @@ body#landing.is-loading {
 	color: rgba(0, 0, 0, 0.875);
 }
 
+#jobs a {
+	border-bottom: none;
+}
+
 #job ul {
 	padding-left: 3%;
+}
+
+#jobs table thead {
+	border-bottom: solid 2px #e37b7c;
+}
+
+#jobs #wrapper {
+	width: 75%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 736px) {
+	#jobs #wrapper {
+		width: 90%;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#jobs #wrapper {
+		width: 100%;
+		margin: 0;
+	}
 }
 
 body.alt,
