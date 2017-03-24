@@ -3,3 +3,4 @@ bower_components
 .env
 _design
 public/components
+*.log
