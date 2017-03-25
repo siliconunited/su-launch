@@ -360,6 +360,10 @@ center         Position image in the center.
 </div>
 ```
 
+# Customer Support
+
+Site customer support is managed via the [Zopim Zendesk](https://account.zopim.com/login?lang=en-us).
+
 ## Credits:
 
 ### Demo Images:
